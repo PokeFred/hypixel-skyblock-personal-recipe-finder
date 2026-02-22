@@ -1,0 +1,24 @@
+{
+    "name": "hypixel-skyblock-personal-recipe-finder",
+    "version": "0.0.0",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "start": "node -r dotenv/config ./build/index.js",
+        "dev": "vite dev",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "dotenv": "^17.3.1"
+    },
+    "devDependencies": {
+        "@sveltejs/adapter-node": "^5.5.3",
+        "@sveltejs/enhanced-img": "^0.10.3",
+        "@sveltejs/kit": "^2.53.0",
+        "@sveltejs/vite-plugin-svelte": "^6.2.4",
+        "svelte": "^5.53.2",
+        "typescript": "^5.9.3",
+        "vite": "^7.3.1"
+    }
+}
