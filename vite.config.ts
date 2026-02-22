@@ -2,6 +2,7 @@ import { defineConfig } from "vite"
 import type { CommonServerOptions } from "vite"
 import { sveltekit } from "@sveltejs/kit/vite"
 import { enhancedImages } from "@sveltejs/enhanced-img"
+import tailwindcss from "@tailwindcss/vite"
 
 const server: CommonServerOptions = {
     host: "localhost",
@@ -12,5 +13,5 @@ const server: CommonServerOptions = {
 export default defineConfig({
     server: server,
     preview: server,
-    plugins: [sveltekit(), enhancedImages()]
+    plugins: [tailwindcss(), sveltekit(), enhancedImages()]
 })
